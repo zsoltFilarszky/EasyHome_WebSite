@@ -1,0 +1,8 @@
+
+#fof{display:block; width:100%; padding:150px 0; line-height:1.6em;}
+#fof .fl_left{padding-right:30px; border-right:1px solid #CCCCCC;}
+#fof .fl_left h1{margin:0; padding:0; font-size:80px; line-height:80px; text-transform:uppercase;}
+#fof .fl_right{padding-top:30px; width:65%;}
+#fof .fl_right p{display:block; margin:0 0 15px 0; padding:0; font-size:16px;}
+#fof .fl_right input{width:220px; padding:5px; border:1px solid #CCCCCC;}
+#fof .fl_right #submit{width:auto;}

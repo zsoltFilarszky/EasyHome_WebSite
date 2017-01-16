@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="app.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1 class="title">EasyHome Automation</h1>
+		<div  ng-app="myApp">
+			<div id="sensorStuff" ng-controller="Controller">
+			<div class="createStuff">
+				<p> Create sensor: </p>
+				<button id=create_sensor ng-click="createSensor()">Create Sensor!</button>
+			</div>
+			<h1>Sensor data:</h1>
+				<ul>
+					<li style="list-style-type: none;" ng-repeat="n in sensorList">
+						<div><p>Sensor tpye:<strong>{{n.type}}</strong>&nbsp&nbsp&nbsp  ID:{{n.id}}</p></div>
+						<button class="btn-class" ng-click="deleteSensor(n.id)" >Delete "{{n.type}}" sensor!</button>
+						<button ng-show="n.changeable==1" class="btn-class" ng-click="changeSensorValue(n.id,n.type)" >Modify "{{n.type}}" value!</button>
+						<table>
+							<tr>
+								<th>Time</th>
+								<th>Value</th>
+								<th>Unit</th>
+							</tr>
+							<tr id="{{n.id}}" data-ng-init="sensorData(n.id)">
+								<td data-th="time"></td>
+								<td data-th="value"></td>
+								<td data-th="unit"></td>
+							</tr>
+						</table>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+</html>

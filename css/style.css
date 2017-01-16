@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'ciclefina';
+    src: url('Cicle_Fina-webfont.eot');
+    src: url('Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Cicle_Fina-webfont.woff') format('woff'),
+         url('Cicle_Fina-webfont.ttf') format('truetype'),
+         url('Cicle_Fina-webfont.svg#ciclefina') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+table {
+	width: 70%;
+	padding-left:60px; 
+	margin:20px;"
+}
+th,td{
+	padding: 8px;
+    text-align: left;
+	height:20px;
+	border-bottom: 1px solid #ddd;	
+	max-width: 30px;
+    max-height: 30px;
+}
+.title{
+	text-align:center
+}
+
+.createStuff{
+	display:inline-block;
+}
+
+.sensorType {
+	font-weight:bold;
+}
+
+td:hover {background-color: #f5f5f5}
+body {
+    font-family: 'ciclefina';
+	background-color: #DCDCDC;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #34495E;
+}
+
+button{
+	
+}
